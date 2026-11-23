@@ -1,0 +1,116 @@
+/*总容器*/
+.wrapper {
+	width: 100%;
+	height: 100%;
+}
+/*header部分*/
+.wrapper header {
+	width: 100%;
+	height: 12vw;
+	background: #0097FF;
+	font-size: 4.8vw;
+	color: #FFFFFF;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	/*固定定位*/
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.wrapper header .header-icon {
+	position: absolute;
+	top: 3vw;
+	left: 7vw;
+}
+
+/*订单列表部分*/
+.wrapper .order-wrapper {
+	margin-top: 12vw ;
+}
+
+.wrapper .order-wrapper .order-list-box {
+	padding: 5vw;
+}
+
+.wrapper .order-list-box h3 {
+	color: #999;
+	font-size: 4vw;
+	font-weight: 400;
+}
+
+.wrapper .order-list-box .order {
+	margin-top: 3vw;
+	margin-bottom: 4vw;
+}
+
+.order-list-box .order .order-info {
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.order-list-box .order .order-info p {
+	font-size: 4vw;
+	color: #666;
+}
+.order-info .order-info-right {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.order-info .order-info-right .order-info-right-icon {
+	background-color:  #f90;
+	color: #FFFFFF;
+	border-radius: 3px;
+	margin-left: 2vw;
+}
+
+/*订单明细*/
+.order .order-detailet {
+	margin-top: 3vw;
+}
+.order .order-detailet li {
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 2vw;
+	font-size: 3.5vw;
+	color: #666666;
+}
+
+/*footer部分*/
+.wrapper .footer {
+	width: 100%;
+	height: 14vw;
+	border-top: 1px solid #DDDDDD;
+	background-color: #FFFFFF;
+	
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	
+	/*fixed 固定定位。页面元素会固定在指定位置*/
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+
+.footer li {
+	color: #999;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.footer li i {
+	font-size: 5vw;
+}
+.footer li p {
+	font-size: 2.8vw;
+}

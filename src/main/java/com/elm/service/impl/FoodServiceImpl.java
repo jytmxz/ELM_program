@@ -1,0 +1,25 @@
+package com.elm.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.elm.mapper.FoodMapper;
+import com.elm.pojo.Food;
+import com.elm.service.FoodService;
+
+@Service
+@Transactional
+public class FoodServiceImpl implements FoodService {
+	@Autowired
+	private FoodMapper foodMapper;
+	
+	@Override
+	public List<Food> findFoodByBusinessId(Integer businessId) {
+		List<Food> foodList = foodMapper.findFoodByBusinessId(businessId);
+		return foodList;
+	}
+
+}

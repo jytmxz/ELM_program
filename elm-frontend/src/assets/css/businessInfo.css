@@ -1,0 +1,201 @@
+/*总容器*/
+.wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper header {
+	width: 100%;
+	height: 12vw;
+	background: #0097FF;
+	font-size: 4.8vw;
+	color: #FFFFFF;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	/*固定定位*/
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.wrapper header .header-icon {
+	position: absolute;
+	top: 3vw;
+	left: 7vw;
+}
+
+/*商家信息部分*/
+.wrapper .business-info-box {
+	width: 100%;
+	margin-top: 12vw;
+}
+
+/*logo 部分*/
+.business-info-box .business-logo {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 5vw 0;
+}
+.business-info-box .business-logo img {
+	width: 40vw;
+	height: 30vw;
+	border-radius: 2vw;
+}
+
+/*businessInfo 部分*/
+
+.business-info-box .business-info {
+	width: 100%;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+.business-info-box .business-info h1 {
+	font-size: 5vw;
+}
+.business-info-box .business-info p {
+	font-size: 3vw;
+	color: #666666;
+	margin-top: 1.5vw;
+}
+
+/*食品列表部分*/
+.wrapper .food {
+	width: 100%;
+	margin-top: 7vw;
+}
+
+.wrapper .food li {
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 3vw;
+	margin-bottom: 3vw;
+}
+.wrapper .food li .food-left {
+	display: flex;
+	align-items: center;
+}
+.wrapper .food li .food-left .food-left-info h3 {
+	font-size: 3.8vw;
+	color: #555555;
+}
+.wrapper .food li .food-left .food-left-info p {
+	font-size: 3vw;
+	color: #888888;
+	margin-top: 1vw;
+}
+.wrapper .food li .food-left img {
+	width: 20vw;
+	height: 20vw;
+	margin-right: 3vw;
+}
+
+.wrapper .food li .food-right {
+	display: flex;
+	align-items: center;
+}
+
+.wrapper .food li .food-right p {
+	font-size: 3.6vw;
+	color: #333333;
+	margin: 0 3vw;
+}
+.wrapper .food li .food-right .fa-minus-circle {
+	font-size: 5vw;
+	color: #999999;
+}
+.wrapper .food li .food-right .fa-plus-circle {
+	font-size: 5vw;
+	color: #0097EF;
+}
+
+/*结算部分*/
+.wrapper .cart {
+	display: flex;
+	
+	width: 100%;
+	height: 14vw;
+	
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.wrapper .cart .cart-left {
+	background-color: #505051;
+	color: #FFFFFF;
+	
+	flex: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	position: relative;
+}
+.wrapper .cart .cart-left .cart-left-icon {
+	width: 16vw;
+	height: 16vw;
+	border-radius: 50%;
+	background-color: #333333;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	position: absolute;
+	left: 4vw;
+	top: -4vw;
+}
+.wrapper .cart .cart-left .cart-left-icon i {
+	
+	width: 13vw;
+	height: 13vw;
+	border-radius: 50%;
+	background-color: #0097EF;
+	font-size: 7vw;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.wrapper .cart .cart-left .cart-left-icon .cart-left-icon-quantity {
+	width: 5vw;
+	height: 5vw;
+	border-radius: 50%;
+	background-color: #FF0000;
+	color: #FFFFFF;
+	font-size: 3vw;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	position: absolute;
+	right: 0vw;
+	top: 0vw;
+}
+.wrapper .cart .cart-left .cart-left-info p:first-child {
+	font-size: 4.5vw;
+}
+.wrapper .cart .cart-left .cart-left-info p:last-child {
+	font-size: 3vw;
+	color: #bbbbbb;
+}
+
+.wrapper .cart .cart-right {
+	background-color: #38CA73;
+	color: #FFFFFF;
+	font-weight: 700;
+	
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

@@ -1,0 +1,86 @@
+/*总容器*/
+.wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+/*商家列表部分*/
+.wrapper .business-list {
+	margin-top: 12vw;
+}
+.business-list li {
+	padding: 3vw;
+	
+	border-bottom: 1px solid #DDDDDD;
+	
+	display: flex;
+	align-items: center;
+}
+.business-list li .business-img {
+	position: relative;
+}
+.business-list li .business-img .business-img-quantity {
+	position: absolute;
+	right: -3vw;
+	top: -2vw;
+	
+	width: 5vw;
+	height: 5vw;
+	background-color: #FF0000 ;
+	color: #FFFFFF;
+	border-radius: 50%;
+	font-size: 3vw;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.business-list li .business-img img {
+	width: 20vw;
+	height: 20vw;
+}
+.business-list li .business-info {
+	margin-left: 3vw;
+	
+	line-height: 6.8vw;
+}
+.business-list li .business-info h3 {
+	font-size: 3.8vw;
+	color: #555555;
+}
+.business-list li .business-info p {
+	font-size: 3vw;
+	color: #aaa;
+}
+
+/*footer部分*/
+.wrapper .footer {
+	width: 100%;
+	height: 14vw;
+	border-top: 1px solid #DDDDDD;
+	background-color: #FFFFFF;
+	
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	
+	/*fixed 固定定位。页面元素会固定在指定位置*/
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+
+.footer li {
+	color: #999;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.footer li i {
+	font-size: 5vw;
+}
+.footer li p {
+	font-size: 2.8vw;
+}

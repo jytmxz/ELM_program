@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.neuedu.elm.mapper.CartMapper">
+	
+	<select id="findCartByUserIdAndBusinessId" resultType="cart">
+		SELECT * FROM cart WHERE userId =#{userId} and businessId=#{businessId}
+	</select>
+	
+	<select id="findCartSumByUserIdGroupBusinessId" resultType="map">
+		SELECT businessid, SUM(quantity) s FROM cart WHERE userId =#{userId} GROUP BY businessId
+	</select>
+</mapper>

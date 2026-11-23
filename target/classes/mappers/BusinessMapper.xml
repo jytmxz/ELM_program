@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.neuedu.elm.mapper.BusinessMapper">
+	
+	<select id="findBusinessByOrderTypeId" parameterType="int" resultType="business">
+		select * from business where orderTypeId=#{orderTypeId}
+	</select>
+	
+	<select id="findBusinessById" parameterType="int" resultType="business">
+		select * from business where businessid=#{businessId}
+	</select>
+	
+</mapper>
